@@ -13,9 +13,7 @@
     <body>
         <div class="content">
             <div class="page-wrapper toggled">
-                {{ if isset site.Params.sidebar . }}
-                {{- partial (printf "%s/%s" ($.Scratch.Get "pathName") "sidebar.html") . -}}
-                {{ end }}
+
                     <!-- Start Page Content -->
                     <main class="page-content bg-transparent">
                         {{ if .Site.IsMultiLingual }}
